@@ -2,10 +2,11 @@
 make each Latin character with LOGO and circles
 
 
-![image](https://user-images.githubusercontent.com/110537772/188266607-2dc52272-9a13-4b73-99da-8cafcd0d5a05.png)
+![image](https://user-images.githubusercontent.com/110537772/188268137-c0972ffb-976c-44b5-8342-f81670910216.png)
 
+https://www.calormen.com/jslogo/
 
-```logo
+```lgo
 
 ; circle
 to circle
