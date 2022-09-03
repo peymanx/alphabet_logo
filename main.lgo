@@ -133,5 +133,44 @@ end
 
 
 
+; define M
+to M
+    
+    I2
 
-A I
+    repeat 93[
+    right 90
+    fd 4
+    left 90
+    circle
+    bk 6
+    ]
+ 
+ 
+ repeat 93[
+    right 90
+    fd 4
+    left 90
+    circle
+    fd 6
+    ]
+
+
+
+   repeat 140 [
+    circle
+    bk 4
+    ]
+
+
+    ; ready for next letter
+    pu
+    seth 0
+    right 90
+    fd 300
+    seth 0
+    pd
+
+end
+
+M A I N
