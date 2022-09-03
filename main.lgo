@@ -6,7 +6,7 @@ setxy -1000 -300
 pd
 
 make "letter_size 150
-make "delay 0.5
+make "delay 1
 
 
 
@@ -16,19 +16,19 @@ to circle
   repeat 360 [  
   fd 2
   right 1]
-  wait :delay
+
 end
 
 
-; define I
-to I
+
+to I1
     repeat 100 [
     circle
     fd 4
     ]
 end
 
-; define I
+
 to I2
     repeat 140 [
     circle
@@ -38,9 +38,28 @@ end
 
 
 
+; define I
+to I
+    repeat 140 [
+    circle
+    fd 4
+    ]
+    ; ready for next letter
+    pu
+    seth 0
+    bk 550
+    right 90
+    fd 300
+    seth 0
+    pd
+
+
+end
+
+
 ; define P 
 to P
-    I
+    I1
     repeat 290 [
     right 1
     fd 5
@@ -75,9 +94,9 @@ to N
     ; ready for next letter
     pu
     seth 0
-    bk 100
+    bk 550
     right 90
-    fd 50
+    fd 300
     seth 0
     pd
 
@@ -86,3 +105,4 @@ to N
 end
 P
 N
+I
