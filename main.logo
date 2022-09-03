@@ -1,0 +1,88 @@
+cs
+
+; setup
+pu
+setxy -1000 -300
+pd
+
+make "letter_size 150
+make "delay 0.5
+
+
+
+
+; circle
+to circle
+  repeat 360 [  
+  fd 2
+  right 1]
+  wait :delay
+end
+
+
+; define I
+to I
+    repeat 100 [
+    circle
+    fd 4
+    ]
+end
+
+; define I
+to I2
+    repeat 140 [
+    circle
+    fd 4
+    ]
+end
+
+
+
+; define P 
+to P
+    I
+    repeat 290 [
+    right 1
+    fd 5
+    
+    circle
+    
+    ]
+    ; ready for next letter
+    pu
+    seth 0
+    bk 133
+    right 90
+    fd 450
+    seth 0
+    pd
+
+
+end
+
+; define N 
+to N
+    I2
+
+    repeat 93[
+    right 90
+    fd 4
+    left 90
+    circle
+    bk 6
+    ]
+    I2
+    ; ready for next letter
+    pu
+    seth 0
+    bk 100
+    right 90
+    fd 50
+    seth 0
+    pd
+
+
+
+end
+P
+N
