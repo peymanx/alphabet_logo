@@ -135,7 +135,6 @@ end
 
 ; define M
 to M
-    
     I2
 
     repeat 93[
@@ -161,6 +160,7 @@ to M
     circle
     bk 4
     ]
+    
 
 
     ; ready for next letter
@@ -173,4 +173,139 @@ to M
 
 end
 
-M A I N
+
+; define V
+to V
+   pu
+    seth 0
+    fd 560
+    seth 0
+    pd
+
+    repeat 93[
+    right 90
+    fd 4
+    left 90
+    circle
+    bk 6
+    ]
+ 
+ 
+ repeat 93[
+    right 90
+    fd 4
+    left 90
+    circle
+    fd 6
+    ]
+
+
+    ; ready for next letter
+    pu
+    seth 0
+    right 90
+    fd 300
+    right 90 
+    fd 560
+
+    seth 0
+    pd
+
+end
+
+
+
+; define E
+to E
+    
+    pu
+    seth 0
+    fd 560
+    right 90
+    fd 393
+    seth 0
+    pd
+
+    repeat 93[
+    left 90
+    fd 4
+    right 90
+    circle
+    ]
+    repeat 140 [
+    circle
+    bk 4
+    ]
+    repeat 93[
+    left 90
+    bk 4
+    right 90
+    circle
+    
+    ]
+
+    pu
+    seth 0
+     fd 280
+    left 90 
+    fd 383
+    seth 0
+    pd
+
+
+ 
+
+
+    repeat 73[
+    left 90
+    bk 4
+    right 90
+    circle
+    ]
+
+
+   
+
+
+    ; ready for next letter
+    pu
+    seth 0
+    right 90
+    fd 300
+    seth 0
+    pd
+
+end
+
+; define L
+to L
+     pu
+    seth 0
+    fd 560
+    seth 0
+    pd
+
+    repeat 140 [
+    circle
+    bk 4
+    ]
+
+    repeat 93[
+    left 90
+    bk 4
+    right 90
+    circle
+    
+    ]
+
+    ; ready for next letter
+    pu
+    seth 0
+    right 90
+    fd 300
+    seth 0
+    pd
+
+end
+
+V E M 
