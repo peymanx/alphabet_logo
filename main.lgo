@@ -36,6 +36,37 @@ to I2
     ]
 end
 
+; define A 
+to A
+    seth 0
+    repeat 60[
+    right 90
+    fd 4
+    left 90
+    circle
+    fd 9
+    ]
+    
+    repeat 60[
+    right 90
+    fd 4
+    left 90
+    circle
+    bk 9
+    ]
+    ; ready for next letter
+    pu
+    seth 0
+    right 90
+    fd 300
+    seth 0
+    pd
+end
+
+
+
+
+
 
 
 ; define I
@@ -102,34 +133,7 @@ to N
 
 end
 
-; define A 
- 
-to A
-    seth 0
-    repeat 60[
-    right 90
-    fd 4
-    left 90
-    circle
-    fd 9
-    ]
-    
-    repeat 60[
-    right 90
-    fd 4
-    left 90
-    circle
-    bk 9
-    ]
-    ; ready for next letter
-    pu
-    seth 0
-    right 90
-    fd 300
-    seth 0
-    pd
 
-end
 
 
 
@@ -248,7 +252,7 @@ to E
     seth 0
      fd 280
     left 90 
-    fd 383
+    fd 373
     seth 0
     pd
 
@@ -271,7 +275,9 @@ to E
     pu
     seth 0
     right 90
-    fd 300
+    fd 400
+    right 90 
+    fd 280
     seth 0
     pd
 
@@ -308,4 +314,4 @@ to L
 
 end
 
-V E M 
+P E I M A N
