@@ -2,7 +2,7 @@ cs
 
 ; setup
 pu
-setxy -1000 -300
+setxy -2500 -300
 pd
 
 make "letter_size 150
@@ -16,6 +16,7 @@ to circle
   repeat 360 [  
   fd 2
   right 1]
+  wait :delay
 
 end
 
@@ -178,6 +179,57 @@ to M
 end
 
 
+
+; define Y
+to Y
+   
+   pu
+    seth 0
+    fd 560
+    seth 0
+    pd
+
+    repeat 60[
+    right 90
+    fd 4
+    left 90
+    circle
+    bk 6
+    ]
+ 
+ 
+ repeat 60[
+    right 90
+    fd 4
+    left 90
+    circle
+    fd 6
+    ]
+pu
+    seth 0
+    bk 370
+    left 90 
+    fd 230
+    seth 0
+    pd
+
+    repeat 50 [
+    circle
+    bk 4
+    ]
+
+    ; ready for next letter
+    pu
+    seth 0
+    right 90
+    fd 550
+    
+
+    seth 0
+    pd
+
+end
+
 ; define V
 to V
    pu
@@ -314,4 +366,4 @@ to L
 
 end
 
-P E I M A N
+P E Y M A N
