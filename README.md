@@ -2,7 +2,7 @@
 make each Latin character with LOGO and circles
 
 
-![image](https://user-images.githubusercontent.com/110537772/188268137-c0972ffb-976c-44b5-8342-f81670910216.png)
+![image](https://user-images.githubusercontent.com/110537772/188447433-30b3d204-db02-42df-a63f-c473bec0e31b.png)
 
 https://www.calormen.com/jslogo/
 
