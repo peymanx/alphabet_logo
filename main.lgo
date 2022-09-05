@@ -1,5 +1,4 @@
 cs
-
 ; setup
 pu
 setxy -2500 -300
@@ -8,8 +7,9 @@ pd
 make "letter_size 150
 make "delay 1
 
-
-
+to randomcolor
+  setcolor pick [ red orange yellow green blue violet ]
+end
 
 ; circle
 to circle
@@ -17,10 +17,8 @@ to circle
   fd 2
   right 1]
   wait :delay
-
+  ;randomcolor
 end
-
-
 
 to I1
     repeat 100 [
@@ -28,7 +26,6 @@ to I1
     fd 4
     ]
 end
-
 
 to I2
     repeat 140 [
@@ -39,7 +36,6 @@ end
 
 ; define A 
 to A
-    seth 0
     repeat 60[
     right 90
     fd 4
@@ -47,7 +43,6 @@ to A
     circle
     fd 9
     ]
-    
     repeat 60[
     right 90
     fd 4
@@ -64,12 +59,6 @@ to A
     pd
 end
 
-
-
-
-
-
-
 ; define I
 to I
     repeat 140 [
@@ -84,10 +73,7 @@ to I
     fd 300
     seth 0
     pd
-
-
 end
-
 
 ; define P 
 to P
@@ -95,9 +81,7 @@ to P
     repeat 290 [
     right 1
     fd 5
-    
     circle
-    
     ]
     ; ready for next letter
     pu
@@ -107,14 +91,11 @@ to P
     fd 450
     seth 0
     pd
-
-
 end
 
 ; define N 
 to N
     I2
-
     repeat 93[
     right 90
     fd 4
@@ -131,17 +112,11 @@ to N
     fd 300
     seth 0
     pd
-
 end
-
-
-
-
 
 ; define M
 to M
     I2
-
     repeat 93[
     right 90
     fd 4
@@ -149,46 +124,33 @@ to M
     circle
     bk 6
     ]
- 
- 
- repeat 93[
+    repeat 93[
     right 90
     fd 4
     left 90
     circle
     fd 6
     ]
-
-
-
    repeat 140 [
     circle
     bk 4
     ]
-    
-
-
-    ; ready for next letter
+     ; ready for next letter
     pu
     seth 0
     right 90
     fd 300
     seth 0
     pd
-
 end
-
-
 
 ; define Y
 to Y
-   
-   pu
+    pu
     seth 0
     fd 560
     seth 0
     pd
-
     repeat 60[
     right 90
     fd 4
@@ -196,38 +158,31 @@ to Y
     circle
     bk 6
     ]
- 
- 
- repeat 60[
+    repeat 60[
     right 90
     fd 4
     left 90
     circle
     fd 6
     ]
-pu
+    pu
     seth 0
-    bk 370
+    bk 360
     left 90 
-    fd 230
+    fd 235
     seth 0
     pd
-
-    repeat 50 [
+    repeat 60 [
     circle
     bk 4
     ]
-
     ; ready for next letter
     pu
     seth 0
     right 90
     fd 550
-    
-
     seth 0
     pd
-
 end
 
 ; define V
@@ -237,7 +192,6 @@ to V
     fd 560
     seth 0
     pd
-
     repeat 93[
     right 90
     fd 4
@@ -245,17 +199,13 @@ to V
     circle
     bk 6
     ]
- 
- 
- repeat 93[
+    repeat 93[
     right 90
     fd 4
     left 90
     circle
     fd 6
     ]
-
-
     ; ready for next letter
     pu
     seth 0
@@ -263,17 +213,12 @@ to V
     fd 300
     right 90 
     fd 560
-
     seth 0
     pd
-
 end
-
-
 
 ; define E
 to E
-    
     pu
     seth 0
     fd 560
@@ -281,7 +226,6 @@ to E
     fd 393
     seth 0
     pd
-
     repeat 93[
     left 90
     fd 4
@@ -297,32 +241,20 @@ to E
     bk 4
     right 90
     circle
-    
     ]
-
     pu
     seth 0
-     fd 280
+    fd 280
     left 90 
     fd 373
     seth 0
     pd
-
-
- 
-
-
     repeat 73[
     left 90
     bk 4
     right 90
     circle
     ]
-
-
-   
-
-
     ; ready for next letter
     pu
     seth 0
@@ -332,7 +264,6 @@ to E
     fd 280
     seth 0
     pd
-
 end
 
 ; define L
@@ -342,20 +273,16 @@ to L
     fd 560
     seth 0
     pd
-
     repeat 140 [
     circle
     bk 4
     ]
-
     repeat 93[
     left 90
     bk 4
     right 90
     circle
-    
     ]
-
     ; ready for next letter
     pu
     seth 0
@@ -363,7 +290,41 @@ to L
     fd 300
     seth 0
     pd
-
 end
 
-P E Y M A N
+; define x
+to X
+    pu
+    seth 0
+    fd 350
+    seth 0
+    pd
+    repeat 60[
+    right 90
+    fd 4
+    left 90
+    circle
+    bk 6
+    ]
+     pu
+    seth 0
+    fd 360
+    seth 0
+    pd
+    repeat 60[
+    right 90
+    bk 4
+    left 90
+    circle
+    bk 6
+    ]
+    ; ready for next letter
+    pu
+    seth 0
+    right 90
+    fd 600
+    seth 0
+    pd
+end
+
+P E Y M A N X
