@@ -1,12 +1,11 @@
 # alphabet_logo
 make each Latin character with LOGO and circles
 
-
-![image](https://user-images.githubusercontent.com/110537772/188447433-30b3d204-db02-42df-a63f-c473bec0e31b.png)
-
 https://www.calormen.com/jslogo/
 
-```lgo
+
+## Draw a Circle
+```logo
 
 ; circle
 to circle
@@ -18,3 +17,32 @@ end
 
 
 ```
+
+## Define P letter
+```logo
+;define P letter
+  to P
+      I1
+      repeat 290 [
+      right 1
+      fd 5
+      circle
+      ]
+      ; ready for next letter
+      pu
+      seth 0
+      bk 133
+      right 90
+      fd 450
+      seth 0
+      pd
+  end
+```
+
+## Output
+
+
+![image](https://user-images.githubusercontent.com/110537772/189468810-0bfc07b1-2db1-4ab7-bf29-adeb33372c04.png)
+
+
+
