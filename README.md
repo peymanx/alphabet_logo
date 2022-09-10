@@ -42,7 +42,8 @@ end
 ## Output
 
 
-![image](https://user-images.githubusercontent.com/110537772/189468810-0bfc07b1-2db1-4ab7-bf29-adeb33372c04.png)
+![image](https://user-images.githubusercontent.com/110537772/189468810-0bfc07b1-2db1-4ab7-bf29-adeb33372c04.png)    
+`Google Chrome Screen zoom back: 33%`
 
 
 
